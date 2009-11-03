@@ -136,10 +136,6 @@ CODE
 
       <script type="text/javascript">
 
-
-
-
-
       Raphael.fn.drawGrid = function (x, y, w, h, wv, hv, color) {
           color = color || "#000";
           var path = ["M", x, y, "L", x + w, y, x + w, y + h, x, y + h, x, y],
@@ -219,7 +215,7 @@ CODE
                           newcoord.x -= 114;
                       }
                       frame.show().animate({x: newcoord.x, y: newcoord.y}, 200 * is_label_visible);
-                      label[0].attr({text: data + " hit" + ((data % 10 == 1) ? "" : "s")}).show().animateWith(frame, {x: +newcoord.x + 50, y: +newcoord.y + 12}, 200 * is_label_visible);
+                      label[0].attr({text: data + " click" + ((data % 10 == 1) ? "" : "s")}).show().animateWith(frame, {x: +newcoord.x + 50, y: +newcoord.y + 12}, 200 * is_label_visible);
                       label[1].attr({text: lbl + " Octubre 2009"}).show().animateWith(frame, {x: +newcoord.x + 50, y: +newcoord.y + 27}, 200 * is_label_visible);
                       dot.attr("r", 7);
                       is_label_visible = true;
